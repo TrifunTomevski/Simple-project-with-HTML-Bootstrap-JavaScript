@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- links -->
+  <script src="https://kit.fontawesome.com/ae261298fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar and Menu -->
+  <header class="bottom-border">
+    <div class="container-fluid">
+      <div class="navb-logo">
+        <!-- Logo -->
+        <a href="./main.html"><img src="./images/Logo.png" alt="BrainsterLogo"><br><span
+            class="text-dark"><b>Brainster</b></span></a>
+      </div>
+      <!-- Nav items on desktop -->
+      <div class="navb-items d-none d-xl-flex">
+        <div class="item">
+          <a class="text-dark link-1" href="https://brainster.co/marketing/">Академија за маркетинг</a>
+        </div>
+        <div class="item">
+          <a class="text-dark link-1" href="https://brainster.co/front-end/">Академија за програмирање</a>
+        </div>
+        <div class="item">
+          <a class="text-dark link-1" href="https://brainster.co/graphic-design/">Академија за data science</a>
+        </div>
+        <div class="item">
+          <a class="text-dark link-1" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+        </div>
+        <a href="./signup.html">
+          <button class="btn buttonhover" type="submit"><b>Вработи наш студент</b></button></a>
+      </div>
+      <!-- Modal -->
+      <div class="mobile-toggler d-xl-none">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+      <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content footer-checkbox-hammenu">
+            <!-- Mobile and tablet friendly (menu) -->
+            <div class="modal-header">
+              <img src="./Logo.png" alt="Logo">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                  class="fa-solid fa-xmark "></i></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-line">
+                <a class="text-white" href="https://brainster.co/marketing/">Академија за маркетинг</a>
+              </div>
+              <div class="modal-line">
+                <a class="text-white" href="https://brainster.co/front-end/">Академија за програмирање</a>
+              </div>
+              <div class="modal-line">
+                <a class="text-white" href="https://brainster.co/graphic-design/">Академија за data science</a>
+              </div>
+              <div class="modal-line">
+                <a class="text-white" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+              </div>
+              <form class="form-inline ">
+                <a href="./signup.html"><button id="toggle-button" class="btn buttonhover my-2 my-sm-0"
+                    type="submit"><b>Вработи наш студент</b></button></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Employee some student -->
+  <div class="container-fluid yellow">
+    <div class="row customposition">
+      <div class="col-lg-12 col-md-12 text-center py-4 font-weight-bold customposition">
+        <h3>Вработи студенти</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="container">
+    <form class="row g-3 needs-validation" novalidate>
+      <!-- name -->
+      <div class="col-lg-6 col-md-6">
+        <label for="validationCustom01" class="form-label"><b>Име и презиме</b></label>
+        <input type="text" class="form-control py-3 fst-italic" id="validationCustom01"
+          placeholder="Вашето име и презиме" required>
+        <div class="valid-feedback">
+          Изгледа добро!
+        </div>
+        <div class="invalid-feedback">
+          Ве молам одберете правилно име и презиме.
+        </div>
+      </div>
+      <!-- company name -->
+      <div class="col-lg-6 col-md-6">
+        <label for="validationCustom02" class="form-label"><b>Име на компанија</b></label>
+        <input type="text" class="form-control py-3 fst-italic" id="validationCustom02"
+          placeholder="Име на вашата компанија" required>
+        <div class="valid-feedback">
+          Изгледа добро!
+        </div>
+        <div class="invalid-feedback">
+          Мора да внесете име на компанија.
+        </div>
+      </div>
+      <!-- e-mail -->
+      <div class="col-lg-6 col-md-6">
+        <label for="validationCustomUsername" class="form-label"><b>Котанкт e-mail</b></label>
+        <div class="input-group has-validation">
+          <input type="email" placeholder="Контакт e-mail на вашата компанија" class="form-control py-3 fst-italic"
+            id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="valid-feedback">
+            Изгледа добро!
+          </div>
+          <div class="invalid-feedback">
+            Вашиот внесен e-mail е невалиден
+          </div>
+        </div>
+      </div>
+      <!-- number -->
+      <div class="col-lg-6 col-md-6">
+        <label for="validationCustom03" class="form-label"><b>Контакт телефон</b></label>
+        <input type="number" placeholder="Контакт телефон на вашата компанија" class="form-control py-3 fst-italic"
+          id="validationCustom03" required>
+        <div class="valid-feedback">
+          Изгледа добро!
+        </div>
+        <div class="invalid-feedback">
+          Внесете го телефонскиот број на компанијата.
+        </div>
+      </div>
+      <!-- select option -->
+      <div class="col-lg-6 col-md-6">
+        <label for="validationCustom04" class="form-label"><b>Тип на студенти</b></label>
+        <select class="form-select py-3" id="validationCustom04" required>
+          <option selected disabled value="" class="fw-bold">Изберете тип на студенти</option>
+          <option>Студенти од маркетинг</option>
+          <option>Студенти од програмирање</option>
+          <option>Студенти од data science</option>
+          <option>Студенти од дизајн</option>
+        </select>
+        <div class="valid-feedback">
+          Изгледа добро!
+        </div>
+        <div class="invalid-feedback">
+          Мора да внесете од наведените пред да продолжите.
+        </div>
+        <!-- checkbox -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Согласете се со условите и условите
+          </label>
+          <div class="invalid-feedback">
+            Мора да се согласите пред да поднесете.
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <div class="col-lg-6 col-md-6 send-button buttonmobile">
+        <button type="submit">
+          <b>ИСПРАТИ</b>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <div class="container footer-checkbox-hammenu">
+    <div class="row text-white footer-checkbox-hammenu fixed-bottom">
+      <div class="col-10 offset-1 text-center mt-3">
+        <p>
+          Изработено од студент на Brainster <b><i>"Trifun Tomevski"</i></b><i class="fa-regular fa-face-flushed"></i>
+          </b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- myJavaScript -->
+  <script src="./_signup.js"></script>
+  <!-- BootStrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+  "></script>
+
+</body>
+
+</html>

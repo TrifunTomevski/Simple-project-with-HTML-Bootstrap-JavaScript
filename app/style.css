@@ -1,0 +1,380 @@
+/* resets */
+body {
+    overflow-x: hidden;
+    background-color: #fcd232;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* custom colors */
+.yellow {
+    background-color: #fcd232;
+}
+
+.footer-checkbox-hammenu {
+    background-color: #302f38;
+}
+
+.hover-checkbox {
+    background-color: #eb3b3b;
+}
+
+/* navbar modal custom */
+span {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #fcd232;
+}
+
+header .container-fluid {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo img {
+    margin-left: 16px;
+    width: 60px;
+    height: 55px;
+}
+
+header .navb-items {
+    display: flex;
+    align-items: center;
+}
+
+header .item {
+    font-weight: bold;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+header .mobile-toggler {
+    font-size: 30px;
+}
+
+/* modal */
+.modal-dialog {
+    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+    .modal-dialog {
+        width: 100%;
+    }
+}
+
+.modal-content {
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: #302f38;
+}
+
+.modal-header img {
+    display: none;
+}
+
+.modal-header i {
+    background-color: #302f38;
+    font-size: 35px;
+}
+
+.mobile-toggler i {
+    color: #302f38;
+}
+
+.modal-body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+}
+
+.modal-body .modal-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.modal-line a {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
+
+.fontbold {
+    font-weight: bolder;
+}
+
+/* banner text */
+/* banner centering */
+@media (max-width: 992px) {
+    .textinCenter {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+.textinCenter {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: hsl(0, 0%, 30%);
+    font-size: 75px !important;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        hsl(0, 0%, 56%) 0,
+        rgb(0, 0, 0) 10%,
+        hsl(0, 0%, 100%) 40%
+    );
+    /* error */
+    -webkit-background-clip: text;
+    /* working */
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 200px;
+    }
+
+    100% {
+        background-position: 400px;
+    }
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* checkbox filters */
+.fa-check-circle {
+    font-size: 35px;
+    position: absolute;
+    top: 32px;
+    right: 10px;
+}
+
+@media (max-width: 992px) {
+    .fa-check-circle {
+        font-size: 35px;
+        position: absolute;
+        top: 16px;
+        right: 40px;
+    }
+}
+
+.filter label {
+    position: relative;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: #eb3b3b;
+    color: white;
+    transition: ease-in-out 0.6s;
+}
+
+input[type="checkbox"]:checked ~ label > .fa-check-circle {
+    display: inline-block !important;
+    color: black;
+}
+
+input[type="checkbox"]:checked ~ label {
+    display: inline-block !important;
+    background-color: #eb3b3b;
+}
+
+.borderCustom {
+    border-right: 1px solid silver;
+}
+
+@media (max-width: 992px) {
+    .borderCustom {
+        border: #302f38;
+        border-bottom: 1px solid silver;
+    }
+}
+
+@media (max-width: 425px) {
+    .mainProjectsText {
+        text-align: left;
+    }
+}
+
+/* HOVER EFFECTS */
+/* menu hover */
+.link-1 {
+    transition: 0.3s ease;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 3px 3px;
+}
+
+.link-1:hover {
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+}
+
+/* buttons and hover */
+.buttonhover {
+    display: inline-block;
+    background-color: #eb3b3b;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1.1rem;
+    font-size: 1.2rem;
+    transition: transform 300ms cubic-bezier(0, 0, 0, 0);
+}
+
+.buttonhover:hover {
+    transform: scale(0.9) translatey(-0.1rem);
+    color: white;
+    background-color: #eb3b3b;
+}
+
+/* Banner hover */
+.img2 {
+    max-width: 100%;
+    background: url("./images/image2.jpg");
+    filter: brightness(50%);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 999;
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+}
+
+.img1 {
+    width: 100px;
+    height: calc(91vh - 100px);
+    display: inline-block;
+    transition: all 1.3s ease-in-out;
+    background: url("./images/image1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 45% center;
+}
+
+.img1:hover {
+    transition: all 0s linear;
+    opacity: 0;
+}
+
+/* borders */
+.customborder {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card {
+    transition: all 0.6s;
+    box-shadow: 1px 1px black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px black;
+}
+
+@media (max-width: 425px) {
+    .cards {
+        display: none;
+    }
+
+    .cards:nth-child(-n + 6) {
+        display: inline-block;
+    }
+}
+
+/*  */
+/*  */
+/*  */
+/* Sign up and Employee */
+.customposition {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.bottom-border {
+    border-bottom: 2px solid #f0e68c;
+}
+
+.send-button button {
+    background-color: #eb3b3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 56px;
+    margin-top: 33px;
+    width: 100%;
+    transition: transform 300ms cubic-bezier(0, 0, 0, 0);
+}
+
+.send-button button:hover {
+    transform: scale(0.9) translatey(-0.1rem);
+    color: white;
+    background-color: #eb3b3b;
+}
+
+@media (max-width: 768px) {
+    .buttonmobile {
+        margin-bottom: 200px;
+        margin-top: 150px;
+    }
+}
